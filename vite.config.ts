@@ -10,7 +10,7 @@ const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(
 
 export default defineConfig({
   // Use repository name so GitHub Pages can serve assets from the correct base path
-  base: "/Aqmansea.io/",
+  base: "/ZaneX/",
   plugins,
   resolve: {
     alias: {
