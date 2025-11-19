@@ -9,6 +9,8 @@ import projectBranding from '@/assets/project-branding.webp';
 
 const PortfolioSection = () => {
   const [filter, setFilter] = useState('all');
+  const assetBase = (import.meta.env.BASE_URL || '').replace(/\/?$/, '/');
+  const buildPublicUrl = (path: string) => `${assetBase}${path.replace(/^\/+/, '')}`;
 
   const projects = [
     {
@@ -18,7 +20,7 @@ const PortfolioSection = () => {
       image: projectWebDev,
       category: 'web',
       technologies: ['Bootstrap 5', 'HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
-      liveUrl: 'https://aqmansea.github.io/Bootstrap/alex.html',
+      liveUrl: buildPublicUrl('projects/bootstrap/alex.html'),
       githubUrl: 'https://github.com/Aqmansea/Aqmansea.github.io/tree/main/Bootstrap',
       results: {
         responsive: 'RWD 完整支援',
@@ -33,7 +35,7 @@ const PortfolioSection = () => {
       image: projectMobileApp,
       category: 'web',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Font Awesome', 'Responsive'],
-      liveUrl: 'https://aqmansea.github.io/Grade/index.html',
+      liveUrl: buildPublicUrl('projects/grade/index.html'),
       githubUrl: 'https://github.com/Aqmansea/Aqmansea.github.io/tree/main/Grade',
       results: {
         functionality: '排序、計算、統計',
@@ -48,12 +50,57 @@ const PortfolioSection = () => {
       image: projectBranding,
       category: 'web',
       technologies: ['JavaScript', 'HTML5', 'Canvas', 'Game Logic', 'Event Handling'],
-      liveUrl: 'https://aqmansea.github.io/snake/index.html',
+      liveUrl: buildPublicUrl('projects/snake/index.html'),
       githubUrl: 'https://github.com/Aqmansea/Aqmansea.github.io/tree/main/snake',
       results: {
         games: '3 款完整遊戲',
         learning: '演示基礎邏輯',
         interactive: '完整互動體驗'
+      }
+    },
+    {
+      id: 4,
+      title: 'Canvas �?球�??�戲',
+      description: '�c�L Canvas ��z�@???�J�}�`�A�ھپ�q�l�W�X�B��ơB�J�D�Ƨ@�򪺿�۳B��',
+      image: buildPublicUrl('projects/ball/ball.png'),
+      category: 'web',
+      technologies: ['JavaScript', 'HTML5', 'Canvas'],
+      liveUrl: buildPublicUrl('projects/ball/index.html'),
+      githubUrl: '#',
+      results: {
+        interactive: '�u���W�n',
+        physics: '?��D��G',
+        learning: '�{���լd'
+      }
+    },
+    {
+      id: 5,
+      title: '�өƦr�??�戲',
+      description: '�x�ěz�Ʀr�֦��Ɛ귽�A�H���ܥN��P�G�����o�쪺�I�ծʹ��G���k�T�_�C',
+      image: buildPublicUrl('projects/guess/guess.png'),
+      category: 'web',
+      technologies: ['JavaScript', 'HTML5', 'DOM'],
+      liveUrl: buildPublicUrl('projects/guess/index.html'),
+      githubUrl: '#',
+      results: {
+        logic: '��ߪ��Q',
+        feedback: '�򥻷|�i',
+        usability: '�@�ڮ�'
+      }
+    },
+    {
+      id: 6,
+      title: 'Web Run Code（jQuery）',
+      description: '�H jQuery �[�\���}�X�եΨ��A�H�����@�P�b�D�c�֦��W���}�l HTML/CSS/JS �{��',
+      image: buildPublicUrl('projects/web-run-code/Web run.png'),
+      category: 'web',
+      technologies: ['jQuery', 'HTML5', 'CSS3'],
+      liveUrl: buildPublicUrl('projects/web-run-code/index.html'),
+      githubUrl: '#',
+      results: {
+        utility: '�t�~�~��',
+        integration: '�s�Ҿ�Ͳ',
+        speed: '�פ�Q��'
       }
     },
   ];
