@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -16,102 +16,102 @@ const PortfolioSection = () => {
     {
       id: 1,
       title: 'Learning.com - Bootstrap 學習平台',
-      description: '基於 Bootstrap 5 構建的現代化學習平台，整合漂亮的介面設計、響應式佈局、並包含登入表單、課程卡片等功能。',
+      description: '以 Bootstrap 5 打造的互動學習平台，整合課程卡片、報名表單與完整響應式排版，呈現整潔的教學品牌視覺。',
       image: projectWebDev,
       category: 'web',
       technologies: ['Bootstrap 5', 'HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
       liveUrl: buildPublicUrl('projects/bootstrap/alex.html'),
       githubUrl: 'https://github.com/Aqmansea/Aqmansea.github.io/tree/main/Bootstrap',
       results: {
-        responsive: 'RWD 完整支援',
-        features: '包含登入、課程、帳戶',
-        design: '現代化設計'
+        responsive: '跨裝置 RWD',
+        features: '課程卡片 + 表單',
+        design: '優雅品牌風格'
       }
     },
     {
       id: 2,
-      title: '成績計算網站',
-      description: '一個互動式的成績計算工具，支援成績輸入、排序功能，提供學生快速計算成績。展示基礎的 JavaScript 互動和表單處理。',
+      title: '成績計算器',
+      description: '單頁成績計算工具，可輸入多筆分數即時計算平均、最高 / 最低值並輸出評語，練習原生 JavaScript 的資料處理能力。',
       image: projectMobileApp,
       category: 'web',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Font Awesome', 'Responsive'],
       liveUrl: buildPublicUrl('projects/grade/index.html'),
       githubUrl: 'https://github.com/Aqmansea/Aqmansea.github.io/tree/main/Grade',
       results: {
-        functionality: '排序、計算、統計',
-        responsive: 'RWD 優化',
-        interactive: '完整互動效果'
+        functionality: '加總 / 平均 / 統計',
+        responsive: '行動版優化',
+        interactive: '輸入即刻更新'
       }
     },
     {
       id: 3,
-      title: '小遊戲集合 (Snake, Ball, Guess)',
-      description: '使用 JavaScript 開發的三款經典小遊戲：貪吃蛇、彈跳球、猜數字。演示基礎的遊戲邏輯、事件處理、狀態管理。',
+      title: '迷你遊戲組合（Snake / Ball / Guess）',
+      description: '以 Vanilla JS 製作的三款練習遊戲，涵蓋 Canvas 繪圖、事件處理與狀態管理，驗證遊戲邏輯與互動設計。',
       image: projectBranding,
       category: 'web',
       technologies: ['JavaScript', 'HTML5', 'Canvas', 'Game Logic', 'Event Handling'],
       liveUrl: buildPublicUrl('projects/snake/index.html'),
       githubUrl: 'https://github.com/Aqmansea/Aqmansea.github.io/tree/main/snake',
       results: {
-        games: '3 款完整遊戲',
-        learning: '演示基礎邏輯',
-        interactive: '完整互動體驗'
+        games: '3 款迷你遊戲',
+        learning: '展示遊戲邏輯',
+        interactive: '鍵盤互動體驗'
       }
     },
     {
       id: 4,
-      title: 'Canvas �?球�??�戲',
-      description: '�c�L Canvas ��z�@???�J�}�`�A�ھپ�q�l�W�X�B��ơB�J�D�Ƨ@�򪺿�۳B��',
+      title: 'Canvas 彈跳球遊戲',
+      description: '運用 Canvas API 與基本物理運動，實作彈跳碰撞動畫並提供速度、重力與色彩調整，專注在畫面更新效能。',
       image: buildPublicUrl('projects/ball/ball.png'),
       category: 'web',
       technologies: ['JavaScript', 'HTML5', 'Canvas'],
       liveUrl: buildPublicUrl('projects/ball/index.html'),
       githubUrl: '#',
       results: {
-        interactive: '�u���W�n',
-        physics: '?��D��G',
-        learning: '�{���լd'
+        interactive: '即時動畫',
+        physics: '基礎物理模擬',
+        learning: 'Canvas 更新技巧'
       }
     },
     {
       id: 5,
-      title: '�өƦr�??�戲',
-      description: '�x�ěz�Ʀr�֦��Ɛ귽�A�H���ܥN��P�G�����o�쪺�I�ծʹ��G���k�T�_�C',
+      title: '猜數字小遊戲',
+      description: '透過亂數產生秘密數字與高低提示，讓玩家在有限次數內猜中，強化流程控制、狀態管理與提示體驗。',
       image: buildPublicUrl('projects/guess/guess.png'),
       category: 'web',
       technologies: ['JavaScript', 'HTML5', 'DOM'],
       liveUrl: buildPublicUrl('projects/guess/index.html'),
       githubUrl: '#',
       results: {
-        logic: '��ߪ��Q',
-        feedback: '�򥻷|�i',
-        usability: '�@�ڮ�'
+        logic: '強化推理流程',
+        feedback: '即時提示訊息',
+        usability: '介面直覺易懂'
       }
     },
     {
       id: 6,
       title: 'Web Run Code（jQuery）',
-      description: '�H jQuery �[�\���}�X�եΨ��A�H�����@�P�b�D�c�֦��W���}�l HTML/CSS/JS �{��',
+      description: '線上 HTML / CSS / JS 即時編輯器，透過 jQuery 動態注入程式並立即預覽結果，方便 Demo 或教學快速驗證想法。',
       image: buildPublicUrl('projects/web-run-code/Web run.png'),
       category: 'web',
       technologies: ['jQuery', 'HTML5', 'CSS3'],
       liveUrl: buildPublicUrl('projects/web-run-code/index.html'),
       githubUrl: '#',
       results: {
-        utility: '�t�~�~��',
-        integration: '�s�Ҿ�Ͳ',
-        speed: '�פ�Q��'
+        utility: '快速測試環境',
+        integration: '即貼即跑',
+        speed: '立即預覽結果'
       }
     },
   ];
 
   const categories = [
-    { id: 'all', label: '全部項目' },
+    { id: 'all', label: '全部作品' },
     { id: 'web', label: '網頁開發' },
   ];
 
-  const filteredProjects = filter === 'all' 
-    ? projects 
+  const filteredProjects = filter === 'all'
+    ? projects
     : projects.filter(project => project.category === filter);
 
   return (
@@ -124,7 +124,7 @@ const PortfolioSection = () => {
             我的 <span className="text-accent-gradient">作品</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            以下為前端互動與開發練習，展示 HTML5、CSS3、JavaScript、Bootstrap 等技術的應用。
+            精選練習與 Side Project，展示我在 HTML/CSS、JavaScript、Bootstrap 以及互動式體驗上的實作成果。
           </p>
 
           {/* Filter Buttons */}
@@ -178,7 +178,7 @@ const PortfolioSection = () => {
 
                   {/* Technologies */}
                   <div className="mb-6">
-                    <h4 className="font-semibold mb-3">使用技術：</h4>
+                    <h4 className="font-semibold mb-3">使用技術</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech) => (
                         <Badge key={tech} variant="secondary">
@@ -190,7 +190,7 @@ const PortfolioSection = () => {
 
                   {/* Results */}
                   <div className="mb-8">
-                    <h4 className="font-semibold mb-3">主要特性：</h4>
+                    <h4 className="font-semibold mb-3">重點亮點</h4>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                       {Object.entries(project.results).map(([key, value]) => (
                         <div key={key} className="text-center p-3 bg-muted rounded-lg">
@@ -214,7 +214,7 @@ const PortfolioSection = () => {
                     <Button variant="minimal" className="flex-1" asChild>
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                         <Github className="h-4 w-4 mr-2" />
-                        查看代碼
+                        檢視原始碼
                       </a>
                     </Button>
                   </div>
@@ -227,7 +227,7 @@ const PortfolioSection = () => {
         {/* CTA */}
         <div className="text-center mt-16 animate-fade-in">
           <p className="text-lg text-muted-foreground mb-6">
-            有興趣與我合作開發您的下一個項目嗎？
+            想進一步了解這些作品或合作方式嗎？歡迎與我聊聊！
           </p>
           <Button 
             variant="hero" 
